@@ -1,5 +1,6 @@
 // var isMobile = 0;
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var socket = io('https://woof-off-your-stress.herokuapp.com/');
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
