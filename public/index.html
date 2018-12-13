@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WOOF Off Your Stress</title>
+	<script type="text/javascript" src="countStep.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "style_desktop.css" />
+	<link rel = "stylesheet" type = "text/css" href = "style_mobile.css" />	
+</head>
+<body>
+<div id="desktop">
+	<div id="dHome">
+		<video autoplay id="introVideo">
+  			<source src="../images/intro.mp4" type="video/mp4">
+		</video>
+<!-- 	<div id="nav">
+		<button id="facts" onclick="">stress facts</button>
+		<button id="help" onclick="">help</button>
+	</div> -->
+		<div id="codeInput">
+			<input type="text" name="code" id="inputCode" placeholder="Input Code Here" size="18" maxlength="4">
+			<input type="submit" name="submitCode" id="submitButton" onclick="getInput()">
+		</div>
+	</div>
+	<div id="dReward">
+		<!-- <img src="../images/stress facts_6.gif">
+		<div id="fact" style="color: #feddd6;">Get together with your friends and family to have fun! Laugh and do the things you love.</div> -->
+		<!-- <img src="../images/stress facts_2.gif">
+		<div id="fact" style="color: white;">Writing down your thoughts has shown to help people better deal with stress & negative emotions.</div> -->
+		<!-- <img src="../images/stress facts_4.gif">
+		<div id="fact" style="color: white;">Close relationships such as family and friends help you beat stress!<br>Be around with those you love more!</div> -->
+</div>
+	</div>
+</div>
+
+<div id="mobile">
+	<div id="mbHome">
+		<div id="mbMessage">
+			Hi! My name is Milo. I will be helping you guide through your task of the day!
+		</div>
+		<img src="../images/dog.gif" width="80%">
+	</div>
+
+	<div id="mbChecked">
+		<div id="mbMessageSmall">
+			Done! Congratulations!<br>You have earned yourself a special something!
+		</div>
+		<img src="../images/dogHead.png" width="20%">
+		<div id="check"></div>
+	</div>
+
+	<div id="mbX">
+		<div id="mbMessageSmall">
+			Oops! Try again!<br>You can do it!
+		</div>
+		<img src="../images/dogHead.png" width="20%">
+		<div id="x"></div>
+	</div>
+
+	<div id="mbTask">
+		<div id="mbMessageSmall">
+			Please follow along the below task!
+		</div>
+		<img src="../images/dogHead.png" width="20%">
+		<div id="task">
+			<h1>Task of the Day: </h1>
+			<p>Write down any of your negative thoughts and throw it away!</p>
+		</div>
+	</div>
+
+	<div id="mbThought">
+		<div id="mbMessageSmall">
+			Write down any of your negative thoughts on your mind!
+		</div>
+		<img src="../images/dogHead.png" width="20%">
+		<div id="thoughtInput">
+			<textarea id="inputArea" placeholder="Your thought..." rows="16"></textarea><br>
+			<button onclick="doneThought()">Done!</button>
+		</div>
+	</div>
+
+	<div id="mbThrow">
+		<div id="mbMessageSmall">
+			And THROW IT AWAY with your phone!
+		</div>
+		<img src="../images/dogHead.png" width="20%">
+		<div id="throw"><img src="../images/shaking hand.gif" width="80%"></div>
+	</div>
+
+	<div id="mbCode">
+		<div id="mbMessage">
+			Input this code to unlock a reward on the website!
+		</div>
+		<div id="code">Your Code<br><h1>1295</h1></div>
+	</div>
+
+</div>
+<script type="text/javascript" src="bodymovin.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
