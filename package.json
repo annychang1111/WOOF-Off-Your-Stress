@@ -2,7 +2,7 @@
   "name": "websocket-test-app",
   "description": "Cross Device Communication using WebSockets",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "main": "index.js",
   "license": "ISC",
